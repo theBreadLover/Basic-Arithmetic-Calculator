@@ -62,9 +62,9 @@ class Calculator {
      */
 
     // How to handle the values
-    static handle_values = (value: number, operation: string): number => {
+    static handle_values = (value: number, operation?: string): number => {
         // Handling the first value.
-        if (this.previous_value == (0 || undefined)) {
+        if (this.previous_value == 0 || this.previous_value == undefined) {
             this.previous_value = value;
             this.previous_result = this.previous_value;
             this.operator = operation;
@@ -74,8 +74,10 @@ class Calculator {
         else {
             this.result  = Calculator.handle_operation(this.operator, this.previous_value, value);
             this.previous_result = this.result;
+            this.buffer = this.result.toString();
         }
 
+        return this.result
 
         /*
         let operations: string[] = this.separate_values('symbol', values);
