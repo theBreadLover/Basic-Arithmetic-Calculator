@@ -89,7 +89,6 @@ class Calculator {
           operation_values.push(parseInt(numbers[i]));
         }
         */
-        return this.result
     }
 
     static handle_operation(operation: string, main_value: number, second_value: number): number {
