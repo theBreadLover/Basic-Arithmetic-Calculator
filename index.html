@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <script type="module" src="./js/handler.js"></script>
+  <script type="module" src="./js/calculator.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <header class="header-container">
+    <h1 class="header-title">Calculator</h1>
+    <p class="header-paragraph">This is noting more than a simple arithmetic Calculator made just for fun.</p>
+  </header>
+  <main id="app" class="main-container">
+    <div id="app-text_area">
+      <input type="text" id="app-input">
+      <textarea readonly id="app-result"></textarea>
+    </div>
+    <div id="app-buttons_area">
+      <div class="button-rows">
+        <button type="button" class="app-buttons number-buttons" value="7">7</button>
+        <button type="button" class="app-buttons number-buttons" value="8">8</button>
+        <button type="button" class="app-buttons number-buttons" value="9">9</button>
+        <button type="button" class="app-buttons operation-buttons" id="app-multiplication_button" value="*">&times;</button>
+      </div>
+      <div class="button-rows">
+        <button type="button" class="app-buttons number-buttons" value="4">4</button>
+        <button type="button" class="app-buttons number-buttons" value="5">5</button>
+        <button type="button" class="app-buttons number-buttons" value="6">6</button>
+        <button type="button" class="app-buttons operation-buttons" id="app-division_button" value="/">&divide;</button>
+      </div>
+      <div class="button-rows">
+        <button type="button" class="app-buttons number-buttons" value="1">1</button>
+        <button type="button" class="app-buttons number-buttons" value="2">2</button>
+        <button type="button" class="app-buttons number-buttons" value="3">3</button>
+        <button type="button" class="app-buttons operation-buttons" id="app-subtraction_button" value="-">&minus;</button>
+      </div>
+      <div class="button-rows">
+        <button type="button" class="app-buttons operation-buttons" id="app-delete_button" value="delete">&leftarrow;</button>
+        <button type="button" class="app-buttons number-buttons" value="0">0</button>
+        <button type="button" class="app-buttons operation-buttons" id="app-addition_button" value="+">&plus;</button>
+      </div>
+    </div>
+  </main>
+<footer>
+</footer>
+</body>
+</html>
